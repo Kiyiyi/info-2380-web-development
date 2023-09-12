@@ -2,7 +2,7 @@
 body {
     background-color: #1F1F1F;
     color: #E0E0E0;
-    font-family: rUBIK, sans-serif;
+    font-family: Rubik, sans-serif;
     line-height: 1.6;
 }
 
@@ -45,6 +45,10 @@ h6 {
     font-size: 1em;
 }
 
+p {
+    font-size: large;
+}
+
 /* Buttons */
 button, input[type="submit"], input[type="button"] {
     background-color: #303030;
@@ -80,18 +84,16 @@ blockquote {
     color: #B0B0B0;
 }
 
+
 #hero-name {
-    margin-top: 20vh;
     display: block;
     justify-content: center;
     align-items: center;
-    height: 10vh;
     width: 100%;
     text-align: center;
 }
 
 .about-me {
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -99,3 +101,72 @@ blockquote {
     text-align: center;
 }
 
+@media (max-width: 767px) {
+    .about-me .row > .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.hero{
+    height: 100vh;
+    margin-top: 20em;
+    margin-bottom: 25em;
+}
+
+.hero h1 {
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.hero h2 {
+    font-size: 3em;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+
+.fa, .fab {
+    color:#E0E0E0;
+}
+  
+.fa.fa-angle-down {
+    padding-top: 1em;
+    animation: bounce 2s infinite;
+  }
+
+.fa.fa-angle-down:hover {
+    color:#444;
+    animation: bounce 2s infinite;
+  }
+
+  @media (max-width: 767px) {
+    .hero {
+        height: 100vh;
+        margin-top: 10em;
+        margin-bottom: 25em;
+    }
+    .rounded-circle {
+        width: 80%;
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+        font-weight: bold;
+    }
+
+    .hero h2 {
+        font-size: 2em;;
+    }
+}
