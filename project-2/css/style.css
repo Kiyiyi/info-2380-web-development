@@ -1,0 +1,84 @@
+body, p {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #2b2b2b;
+    color: #ddd;
+}
+
+.toggle-button {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dark-mode .toggle-button {
+    background-color: #999;
+}
+
+.toggle-indicator {
+    width: 28px;
+    height: 28px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-left: 2px;
+    transition: transform 0.3s;
+}
+
+.dark-mode .toggle-indicator {
+    transform: translateX(30px);
+}
+
+.table-of-contents {
+    background-color: #f8f9fa;
+}
+
+.dark-mode .table-of-contents{
+    background-color: #1f1f1f;
+}
+
+.table-of-contents h3 {
+    margin-top: 0;
+}
+.table-of-contents ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.table-of-contents li {
+    margin-bottom: 5px;
+}
+
+/* Mobile Responsive Type */
+/* TODO bs flexbox smashing text on mobile */
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    html {
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    html {
+        font-size: 1.4em;
+    }
+}
