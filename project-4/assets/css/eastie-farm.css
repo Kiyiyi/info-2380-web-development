@@ -1,0 +1,8 @@
+:root, [data-bs-theme=light] {
+  --bs-primary: #71c837;
+  --bs-primary-rgb: 113,200,55;
+  --bs-primary-text-emphasis: #2D5016;
+  --bs-primary-bg-subtle: #E3F4D7;
+  --bs-primary-border-subtle: #C6E9AF;
+}
+
